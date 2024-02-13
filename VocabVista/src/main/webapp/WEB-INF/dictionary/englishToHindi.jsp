@@ -1,23 +1,26 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>dictionary</title>
-
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="webjars/bootstrap-datepicker/1.0.1/js/bootstrap-datepicker.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page1</title>
+  
+  <!-- Custom CSS -->
+  <style>
+  
+  </style>
 </head>
 <body>
-	<div class="main container">
+	
+	
+	<!-- Sample Card -->
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Sample Word</h5>
+        <p class="card-text">Definition: A brief description of the word goes here.</p>
+        <p class="card-text">Example: An example sentence using the word.</p>
+        
+        <div>
 		<h2> ChatGPT API at Exam Live </h2>
 		<h3>Send message to ChatGPT</h3>
 		
@@ -33,9 +36,15 @@
 		<br>
 		<c:if test="${response != null}">
 			<h2>ChatGPT responded with:</h2>
-			<p>${response}</p>
+			<p th:text=${response}></p>
 		</c:if>
 
 	</div>
+	
+      </div>
+    </div>
+    
+    <!-- End Sample Card -->
+    
 </body>
 </html>

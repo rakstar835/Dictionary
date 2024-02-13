@@ -1,0 +1,52 @@
+{"properties": [
+  {
+    "name": "openai.api_key",
+    "type": "java.lang.String",
+    "description": "A description for 'openai.api_key'"
+  },
+  {
+    "name": "openai.temperature",
+    "type": "java.lang.String",
+    "description": "A description for 'openai.temperature'"
+  },
+  {
+    "name": "openai.temperature",
+    "type": "java.lang.String",
+    "description": "A description for 'openai.temperature'"
+  },
+  {
+    "name": "openai.frequency_penalty",
+    "type": "java.lang.String",
+    "description": "A description for 'openai.frequency_penalty'"
+  },
+  {
+    "name": "openai.presence_penalty",
+    "type": "java.lang.String",
+    "description": "A description for 'openai.presence_penalty'"
+  },
+  {
+    "name": "openai.top_p",
+    "type": "java.lang.String",
+    "description": "A description for 'openai.top_p'"
+  },
+  {
+    "name": "openai.max_tokens",
+    "type": "java.lang.String",
+    "description": "A description for 'openai.max_tokens'"
+  },
+  {
+    "name": "openai.model",
+    "type": "java.lang.String",
+    "description": "A description for 'openai.model'"
+  },
+  {
+    "name": "sitemesh.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'sitemesh.enabled'"
+  },
+  {
+    "name": "sitemesh.configurator-path",
+    "type": "java.lang.String",
+    "description": "A description for 'sitemesh.configurator-path'"
+  }
+]}

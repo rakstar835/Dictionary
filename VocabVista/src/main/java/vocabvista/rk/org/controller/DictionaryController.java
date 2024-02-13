@@ -20,10 +20,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import vocabvista.rk.dao.FormInputDTO;
 import vocabvista.rk.dao.OpenAiApiClient;
 import vocabvista.rk.dao.OpenAiApiClient.OpenAiService1;
-import vocabvista.rk.model.ChatCompletion;
 import vocabvista.rk.model.EnglishToHindiDictionary;
 import vocabvista.rk.model.Message;
-import vocabvista.rk.model.Request;
+import vocabvista.rk.model.RequestChatGPT;
+import vocabvista.rk.viewmodel.ChatCompletion;
 
 @Controller
 @RequestMapping("dictionary")
@@ -64,10 +64,10 @@ public class DictionaryController {
 	public String chat(Model model, @ModelAttribute("dto") FormInputDTO dto) {
 		try {
 			model.addAttribute("request", dto.getPrompt());
-			String response = chatWithGpt3(dto.getPrompt());
-			jsonPatternChecker(response);
+			//String response = chatWithGpt3(dto.getPrompt());
+			//jsonPatternChecker(response);
 
-			model.addAttribute("response", response);
+			//model.addAttribute("response", response);
 		} catch (Exception e) {
 			model.addAttribute("response", "Error in communication with OpenAI ChatGPT API.");
 			System.out.println("Error : "+e);
@@ -77,7 +77,7 @@ public class DictionaryController {
 
 	private String chatWithGpt3(String message) throws Exception {
 		System.out.println(message);
-		Request request = new Request();
+		RequestChatGPT request = new RequestChatGPT();
 		Message msg1 = new Message();
 		Message msg2 = new Message();
 		msg1.setRole("system");

@@ -1,6 +1,8 @@
-package vocabvista.rk.model;
+package vocabvista.rk.viewmodel;
 
 import java.util.List;
+
+import vocabvista.rk.model.Message;
 
 public class ChatCompletion {
     private String id;

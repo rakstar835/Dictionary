@@ -1,4 +1,4 @@
-package vocabvista.rk.controller;
+package vocabvista.rk.org.controller;
 
 import java.util.List;
 

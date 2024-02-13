@@ -2,7 +2,7 @@ package vocabvista.rk.model;
 
 import java.util.List;
 
-public class Request {
+public class RequestChatGPT {
     private String model;
     private List<Message> messages;
     private double temperature;
